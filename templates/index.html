@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Face Recognition</title>
+  <style>
+
+/* Giving a background */
+body {
+    background-image:linear-gradient(rgba(62, 60, 60, 0.712), rgba(211, 196, 196, 0.671)), url(../static/files/pic.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 220%;
+    background-size: cover;
+    background-color:#464646;
+}
+  </style>
+  <!-- Using bootstrap for styling -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+  <h1 style="text-align:center;margin-top: 2px;" >Smart Door Eye</h1>
+    <h1>Upload family member photos: </h1>
+    <form action="/" method='POST' enctype='multipart/form-data'>
+        {{form.hidden_tag()}}
+        {{form.file()}}
+        {{form.submit()}}
+    </form>
+  <div style="text-align: center;"> <h2>Live Streaming</h2></div>
+  <!-- Presenting  the webcam on browser-->
+  <div style="justify-content:center;display: flex;margin-top: 30px;"><img width="58.7%" src="{{ url_for('video_feed') }}"></div>
+</body>
+
+</html>

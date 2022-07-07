@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        body {
+
+    background-image:linear-gradient(rgba(62, 60, 60, 0.712), rgba(236, 218, 218, 0.671)), url(../static/files/pic.jpg);
+    
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    background-attachment: fixed;
+    height: 220%;
+    background-size: cover;
+    
+    background-color:#464646;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+.textstyle{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+}
+    </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Live Display Results</h1>
+    <table class="table">
+        <thead>
+          <tr class="textstyle">
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Time(in UTC)</th>
+            <th scope="col">Expression</th>
+            <th scope="col">Objects</th>
+            <th scope="col">Predicted Person</th>
+            <th scope="col">Photo</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider mb-3">
+          <tr>
+            <th scope="row">1</th>
+            <td>Stranger</td>
+            <td>2022-05-26 12:39:13.135123</td>
+            <td>Angry</td>
+            <td>Knife</td>
+            <td>Criminal</td>
+            <td > <img src="../static/files/pic1.png" alt="" height="170" width="170"></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Ridam</td>
+            <td>2022-05-26 12:40:32.473277</td>
+            <td>Normal</td>
+            <td>-</td>
+            <td>Family Member</td>
+            <td><img src="../static/files/pic2.png" alt="" height="170" width="170"></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Stranger</td>
+            <td>2022-05-25 1:17:15.703457</td>
+            <td>Normal</td>
+            <td>Newspaper</td>
+            <td>Newspaper vendor</td>
+            <td><img src="../static/files/pic3.png" alt="" height="170" width="170"></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Stranger</td>
+            <td>2022-05-25 1:12:51.894053</td>
+            <td >Normal</td>
+            <td>Box</td>
+            <td>Delivery Person</td>
+            <td><img src="../static/files/pic4.png" alt="" height="170" width="170"></td>
+          </tr>
+        </tbody>
+      </table>
+</body>
+</html>
