@@ -1,5 +1,5 @@
 
-# Smart Door Eye
+# Smart Gate
 
 Face detection is a widely growing technology and now it is in high demand for security purposes. This project  is a prototype that demonstrate real world secenario which put a first line of defence system to main door of urban houses. The prototype is deployed outside the main door of house trained with photo's of all the family members that allows a person inside the home only if he/she is a family-member otherwise it gathers all the details of person and displays it and not only that it also warns if something unforseen situatuion is there and also keeps a track of it into the database. The details that it detect of a stranger are facial expressions, objects carried by them, time, photos and based on these by supervised learning it also predicts the person i.e. criminal, delivery boy, milk-man or newspaper vendor.
 
